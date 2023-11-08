@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="./style-webkit.css">
+    </head>
+    <body>
+        <div class="titlepage">
+            <h1 class="titlepage-title">BLG 411E: Software Engineering - Project Plan</h1>
+            <div class="members">
+                <h1 class="members-title">Group Members</h1>
+                <div class="memberlist">
+                    <div class="member">
+                        <div class="member-name">Ahmet Fatih Akcan</div>
+                        <div class="member-id">150210707</div>
+                    </div>
+                    <div class="member">
+                        <div class="member-name">Derviş Genç</div>
+                        <div class="member-id">150200061</div>
+                    </div>
+                    <div class="member">
+                        <div class="member-name">İsa Zobu</div>
+                        <div class="member-id">150200803</div>
+                    </div>
+                    <div class="member">
+                        <div class="member-name">Mete Alp Potuk</div>
+                        <div class="member-id">150190013</div>
+                    </div>
+                    <div class="member">
+                        <div class="member-name">Murat Rençber</div>
+                        <div class="member-id">150190059</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="document">
+            <h1>Introduction</h1>
+            <h2>Scope</h2>
+            <p>CarShare360 is a platform enabling car owners to share their vehicles conveniently. Our service focuses on geolocation-based vehicle sharing via a user-friendly app. Car owners can easily list their cars for short-term rentals, fostering a collaborative and sustainable transportation solution. Importantly, CarShare360 excludes payment services, ensuring a straightforward and secure vehicle-sharing experience.</p>
+            <h2>Deliverables</h2>
+            <ol>
+                <li>Backend Development</li>
+                <li>Serverless Design & Development</li>
+                <li>Product Development & Admin Panel</li>
+                <li>UI Design & Implementation</li>
+                <li>Mobile Development</li>
+            </ol>
+            <h2>Functional Requirements/Tasks</h2>
+            <table>
+                <tr>
+                    <th>Task</th>
+                    <th>Mapped Deliverable</th>
+                </tr>
+                <tr>
+                    <td>User Registration & Authorization</td>
+                    <td rowspan="5">Backend Development</td>
+                </tr>
+                <tr>
+                    <td>Car owner functionalities</td>
+                </tr>
+                <tr>
+                    <td>Renter Functionalities</td>
+                </tr>
+                <tr>
+                    <td>Geolocation Functionalities</td>
+                </tr>
+                <tr>
+                    <td>Rating Functionalities</td>
+                </tr>
+                <tr>
+                    <td>Admin Functionalities</td>
+                    <td>Backend Development - Product Development & Admin Panel</td>
+                </tr>
+                <tr>
+                    <td>Server Setup</td>
+                    <td>Serverless Design & Development</td>
+                </tr>
+                <tr>
+                    <td>UI Implementation</td>
+                    <td>UI Design & Implementation & Mobile Development</td>
+                </tr>
+            </table>
+            <h2>Non-Functional Issues</h2>
+            <h3>Performance</h3>
+            <p>High performance is a critical aspect of CarShare360, ensuring a swift and responsive
+                experience for both car owners and renters. It influences the speed at which users can locate
+                available cars, make bookings, and update their profiles. Eﬀicient serverless architecture,
+                database optimization, and load testing will be employed to guarantee that our app can
+                handle a significant number of simultaneous users without any delays. A responsive and
+                speedy platform enhances user satisfaction and encourages them to engage with the service
+                more frequently.</p>
+            <h3>Usability</h3>
+            <p>
+                Usability is pivotal in making CarShare360 an accessible and user-friendly platform, tailored
+for Android and iOS. The design and navigation must be intuitive, simplifying tasks for car
+owners when listing their vehicles and aiding renters in locating and booking cars effortlessly.
+A user-friendly interface will be a key driver of user adoption and retention.
+            </p>
+            <h3>Cross-Platform Compatibility</h3>
+            <p>While CarShare360 is designed for mobile devices on Android and iOS, cross-platform compatibility remains a priority. It means that the app will provide a consistent and efficient experience across different smartphones and tablets. By optimizing for different mobile operating systems, including iOS and Android, we ensure that all users enjoy a seamless and user-friendly experience, leading to increased engagement and broader adoption.</p>
+            <h1>Project Plan</h1>
+            <h2>Registration</h2>
+            <task>
+                <title>Define Registration Process</title>
+                <size>S</size>
+                <story>As a new user, I want to have a clear registration process so that I can easily create an account.</story>
+                <reqs>The registration process must be documented with a clear outline of steps and data fields required.</reqs>
+            </task>
+            
+            <task>
+                <title>Design Registration Page</title>
+                <size>M</size>
+                <story>As a user, I want a user-friendly registration page that makes it easy for me to create an account.</story>
+                <reqs>The registration page design must include input fields, labels, and buttons with a focus on user experience.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Registration Page UI</title>
+                <size>M</size>
+                <story>As a user, I want the registration page's user interface to be visually appealing and functional.</story>
+                <reqs>The registration page UI should match the design, and all elements must be functional.</reqs>
+            </task>
+            
+            <task>
+                <title>Validate Input Fields</title>
+                <size>S</size>
+                <story>As a user, I want to ensure that the data I enter is accurate and meets the specified requirements.</story>
+                <reqs>Input fields should be checked for data format, required fields, and length.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Password Strength Check</title>
+                <size>S</size>
+                <story>As a user, I want to create a secure password, and the system should help me with password strength checking.</story>
+                <reqs>Passwords should be validated for complexity, such as length, special characters, and a combination of letters and numbers.</reqs>
+            </task>
+            
+            <task>
+                <title>Store User Data in Database</title>
+                <size>L</size>
+                <story>As a user, I want my registration data to be securely stored for future access and authentication.</story>
+                <reqs>User data should be successfully stored in the database with appropriate encryption.</reqs>
+            </task>
+            
+            <task>
+                <title>Handle Registration Errors</title>
+                <size>S</size>
+                <story>As a user, I want to be informed of any errors that may occur during the registration process.</story>
+                <reqs>Error messages should be displayed to users, and logs should capture any technical errors for debugging.</reqs>
+            </task>
+            
+            <task>
+                <title>Redirect to Welcome Page/Dashboard</title>
+                <size>S</size>
+                <story>As a user, I want to be redirected to a welcome page or dashboard after successfully registering and confirming my account.</story>
+                <reqs>After successful registration and confirmation, users should be redirected to the welcome page or dashboard of the application.</reqs>
+            </task>
+            <h2>Login Process</h2>
+            <task>
+                <title>Define Login Process</title>
+                <size>S</size>
+                <story>As a user, I want a clear login process defined so that I can easily access my account.</story>
+                <reqs>The login process must be documented with a clear outline of steps and data fields required.</reqs>
+            </task>
+            
+            <task>
+                <title>Design Login Page</title>
+                <size>M</size>
+                <story>As a user, I want a user-friendly login page that makes it easy for me to access my account.</story>
+                <reqs>The login page design must include input fields, labels, and buttons with a focus on user experience.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Login Page UI</title>
+                <size>M</size>
+                <story>As a user, I want the login page's user interface to be visually appealing and functional.</story>
+                <reqs>The login page UI should match the design, and all elements must be functional.</reqs>
+            </task>
+            
+            <task>
+                <title>Authenticate User</title>
+                <size>L</size>
+                <story>As a user, I want to be able to log in successfully with my correct credentials.</story>
+                <reqs>The system should authenticate users with valid credentials and grant access to their accounts.</reqs>
+            </task>
+            
+            <task>
+                <title>Handle Login Errors</title>
+                <size>S</size>
+                <story>As a user, I want to be informed of any errors that may occur during the login process.</story>
+                <reqs>Error messages should be displayed to users, and logs should capture any technical errors for debugging.</reqs>
+            </task>
+            
+            <task>
+                <title>Design Login Error Notifications</title>
+                <size>XS</size>
+                <story>As a user, I want the notifications that show up when an error has happened when I try to ling to be visually clear and good-looking.</story>
+                <reqs>Error message design must be concise and clear.</reqs>
+            </task>
+            
+            <task>
+                <title>Redirect to Account Dashboard</title>
+                <size>S</size>
+                <story>As a user, I want to be redirected to my account dashboard after successfully logging in.</story>
+                <reqs>After successful login, users should be redirected to their account dashboard within the application.</reqs>
+            </task>
+            <h2>E-Mail Verification</h2>
+            <task>
+                <title>Define Email Verification Process</title>
+                <size>S</size>
+                <story>As a user, I want a clear email verification process defined so that I can verify my email address when needed.</story>
+                <reqs>The email verification process must be documented with a clear outline of steps and requirements.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Email Verification Logic</title>
+                <size>L</size>
+                <story>As a user, I want the system to have the logic in place for email verification to ensure the security of my account.</story>
+                <reqs>The system should have the necessary logic to process email verification requests.</reqs>
+            </task>
+            
+            <task>
+                <title>Send Verification Email</title>
+                <size>M</size>
+                <story>As a user, I want to receive a verification email after registering or requesting an email verification.</story>
+                <reqs>After registration or requesting email verification, a verification email with a unique link should be sent to the provided email address.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Verification Email UI</title>
+                <size>S</size>
+                <story>As a user, I want the verification email to have a visually appealing and user-friendly design.</story>
+                <reqs>The verification email should have a visually appealing and user-friendly design.</reqs>
+            </task>
+            
+            <task>
+                <title>Process Verification Link Click</title>
+                <size>S</size>
+                <story>As a user, I want to be able to click on the verification link in the email to verify my email address.</story>
+                <reqs>Clicking on the verification link should direct the user to a page where the email address can be verified.</reqs>
+            </task>
+            
+            <task>
+                <title>Confirm Email Address</title>
+                <size>M</size>
+                <story>As a user, I want to confirm my email address by following the verification link.</story>
+                <reqs>Clicking on the verification link should confirm the email address in the system.</reqs>
+            </task>
+            
+            <task>
+                <title>Display Email Verification Success Message</title>
+                <size>S</size>
+                <story>As a user, I want to see a success message confirming that my email address has been verified.</story>
+                <reqs>After successfully verifying the email address, a success message should be displayed to the user.</reqs>
+            </task>
+            
+            <task>
+                <title>Handle Unverified Login Attempts</title>
+                <size>M</size>
+                <story>As a user, I want the system to prevent unverified users from accessing my account.</story>
+                <reqs>Unverified users should not be able to log in or access restricted areas of the application until their email address is verified.</reqs>
+            </task>
+            <h2>Car Owner Functionalities</h2>
+            <h3>Adding Car</h3>
+            <task>
+                <title>Design Car Listing Form</title>
+                <size>S</size>
+                <story>As a car owner, I want to have a visually appealing and user-friendly form to list my car for rent so that I can provide detailed information about my car.</story>
+                <reqs>The car listing form should have fields for Make, Model, Photos, Description, and other relevant car details. It should follow the app's design guidelines and be easy to navigate.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Car Listing</title>
+                <size>M</size>
+                <story>As a car owner, I want to be able to submit the car listing form with all the necessary details so that I can make my car available for rent.</story>
+                <reqs>The car listing form should be functional and allow car owners to enter all the required information. When submitted, the data should be stored in the database, and the car should be marked as available.</reqs>
+            </task>
+            
+            <task>
+                <title>Upload Car Photos</title>
+                <size>S</size>
+                <story>As a car owner, I want to upload high-quality photos of my car to showcase it to potential renters.</story>
+                <reqs>Car owners should be able to upload multiple photos of their car. The app should support common image formats, and the uploaded photos should be displayed within the car listing.</reqs>
+            </task>
+            
+            <task>
+                <title>Enter Listing Details (Make, Model, Year, etc.)</title>
+                <size>S</size>
+                <story>As a car owner, I want to provide specific details about my car listing, including make, model, year, and other relevant information of the car, to help renters make informed decisions.</story>
+                <reqs>The car owner should be able to enter any description they want freely.</reqs>
+            </task>
+            <h3>Renter Interaction</h3>
+            <task>
+                <title>Receive Renter Requests</title>
+                <size>S</size>
+                <story>As a car owner, I want to receive notifications or view a list of renter requests for my car so that I can promptly respond to them.</story>
+                <reqs>Car owners should receive notifications when there are new renter requests for their car. Additionally, they should be able to view a list of pending requests in their profile.</reqs>
+            </task>
+            
+            <task>
+                <title>Approve and Reject Renter Requests</title>
+                <size>S</size>
+                <story>As a car owner, I want to have the ability to approve or reject renter requests for my car based on the information I've reviewed.</story>
+                <reqs>Car owners should be able to click a button to either approve or reject a renter request. Once approved, the car should be marked as reserved for the selected dates, and the renter should be notified. If rejected, the renter should also be notified, and the request should be marked as declined.</reqs>
+            </task>
+            <h3>App Implementation</h3>
+            <task>
+                <title>Design Car Owner Dashboard</title>
+                <size>S</size>
+                <story>As a car owner, I want the design of the dashboard to be clear and simple.</story>
+                <reqs>Dashboard design must be user-friendly, and it should cover all the cases where the input of the user changes.</reqs>
+            </task>
+            
+            <task>
+                <title>Design Owned Car List</title>
+                <size>S</size>
+                <story>As a car owner, I want the owned car list to be concise but also simple. Important information about my car should be apparent at the first look, also the visuals should not clutter my view.</story>
+                <reqs>The design must include all the important information about the owned cars in a concise manner wihout being to cluttered.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Car Owner Dashboard</title>
+                <size>L</size>
+                <story>As a car owner, I want a simple flow when I try to configure my car descriptions.</story>
+                <reqs>The UI should be fast and responsive, and should not confuse the user about where they need to tap to accomplish what they want.</reqs>
+            </task>
+
+            <h3>Listing a Car</h3>
+            <task>
+                <title>Design Availability Calendar</title>
+                <size>M</size>
+                <story>As a car owner, I want to have a visual calendar that allows me to set my car's availability schedule to either 'available' or 'unavailable.'</story>
+                <reqs>The availability calendar should be user-friendly, allowing car owners to see and select dates easily. They should be able to distinguish between available and unavailable dates clearly.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Availability Calendar</title>
+                <size>M</size>
+                <story>As a car owner, I want to be able to see the availability calendar for cars of mine so that I can easily set my schedule and make a reservation accordingly.</story>
+                <reqs>Develop an interactive availability calendar for listed cars and allow owners to reserve available time slots.</reqs>
+            </task>
+            <task>
+                <title>Implement Owned Car Availability Toggle</title>
+                <size>S</size>
+                <story>As a car owner, I want to be able to toggle my car's availability status between 'available' and 'unavailable', this should override any calendar dates I set.</story>
+                <reqs>Car owners should be able to click on a toggle of the listed car to switch its status between 'available' and 'unavailable.' The status should be updated in real-time.</reqs>
+            </task>
+            
+            <task>
+                <title>Update Car Availability Status</title>
+                <size>S</size>
+                <story>As a car owner, I want my car's availability status to be automatically updated when I toggle dates in the availability calendar or approve/reject renter requests.</story>
+                <reqs>Whenever a car owner toggles a date in the availability calendar or approves/rejects a renter request, the car's availability status for that date should be updated and reflected accurately.</reqs>
+            </task>
+            <h2>Renter Functionalities</h2>
+            <h3>Searching</h3>
+            <task>
+                <title>Search Cars</title>
+                <size>XS</size>
+                <story>As a user, I want to search for cars so that I can quickly find the car I'm looking for.</story>
+                <reqs>The user should be able to enter a search query and press "Search."</reqs>
+            </task>
+            
+            <task>
+                <title>Filter Search</title>
+                <size>S</size>
+                <story>As a user, I want to filter search results so that I can find a car that meets my needs.</story>
+                <reqs>The user should be able to filter search results based on options such as price, location, or car type.</reqs>
+            </task>
+            
+            <task>
+                <title>Determine User Current Location Using GPS</title>
+                <size>S</size>
+                <story>As a user, I want the app to determine my current location using GPS so that I can easily find and rent nearby cars.</story>
+                <reqs>The app should accurately determine the user's current location using GPS and display it within the app, either on a map or as latitude and longitude coordinates.</reqs>
+            </task>
+            
+            <task>
+                <title>Design the search panel</title>
+                <size>S</size>
+                <story>As a user, I want a well-designed search panel that is easy to use and helps me quickly find cars available for rent based on my preferences, location, and dates.</story>
+                <reqs>Design an aesthetically pleasing and intuitive search panel that includes location, date, and preference filters. Ensure it provides a seamless user experience on different devices.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement the search panel</title>
+                <size>XL</size>
+                <story>As a user, I want to access and use the implemented search panel to easily find available cars for rent based on my location, dates, and preferences.</story>
+                <reqs>Develop and integrate the designed search panel into the CarShare 360 app, ensuring it functions smoothly and allows users to filter car listings by location, dates, and preferences.</reqs>
+            </task>
+            
+            <task>
+                <title>View Car Details</title>
+                <size>XS</size>
+                <story>As a user, I want to view the details of a car so that I can learn more about the vehicle.</story>
+                <reqs>The user should be able to view the details of a car.</reqs>
+            </task>
+            
+            <task>
+                <title>Design Car Details page</title>
+                <size>S</size>
+                <story>As a user, I want to see a well-designed Car Details page when I click on a car listing, giving me all the info I need, like photos, specs, pricing, and details, to make a booking decision quickly.</story>
+                <reqs>Design an informative Car Details page with photos, specs, pricing, and owner info to facilitate user understanding and bookings.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement Car Details page</title>
+                <size>L</size>
+                <story>As a user, I want to be able to click on a car listing and access the implemented Car Details page, where I can view photos, specifications, pricing, and owner details, facilitating my booking process.</story>
+                <reqs>Develop and integrate the Car Details page into the CarShare 360 app, ensuring it displays car information, photos, specs, pricing, and details accurately and is accessible from car listings.</reqs>
+            </task>
+            <h3>Booking</h3>
+            <task>
+                <title>Request Booking</title>
+                <size>M</size>
+                <story>As a user, I want to book a car so that I can use the chosen vehicle on selected dates.</story>
+                <reqs>The user should be able to select the desired rental dates.</reqs>
+            </task>
+            
+            <task>
+                <title>Request History</title>
+                <size>M</size>
+                <story>As a user, I want to access my renting request history, so I can track my past activities.</story>
+                <reqs>Provide a section in the user's profile where they can view their current and past renting requests.</reqs>
+            </task>
+            
+            <task>
+                <title>View Bookings</title>
+                <size>S</size>
+                <story>As a user, I want to access my booking history, so I can see a record of my past and upcoming bookings.</story>
+                <reqs>Provide a section in the user's profile where users can view their booking history.</reqs>
+            </task>
+            
+            <task>
+                <title>Check Status</title>
+                <size>XS</size>
+                <story>As a user, I want to check the status of my bookings, so I can know if they are confirmed or pending.</story>
+                <reqs>Indicate the status of each booking, whether it's confirmed, pending, or canceled.</reqs>
+            </task>
+            
+            <task>
+                <title>Design Bookings Page</title>
+                <size>S</size>
+                <story>As a user, I desire a well-designed Bookings Page that allows me to easily manage and track my car rental bookings, providing essential details such as booking dates, car information, and rental status.</story>
+                <reqs>Design of an intuitive and visually appealing Bookings Page that enables users to efficiently manage their car rental bookings, displaying booking dates, car details, and rental status clearly.</reqs>
+            </task>
+            
+            <task>
+                <title>Implement the Bookings Page</title>
+                <size>L</size>
+                <story>As a user, I want to access and use the implemented Bookings Page, which allows me to manage and track my car rental bookings, including booking dates, car details, and rental status, to enhance my user experience.</story>
+                <reqs>Develop and integrate the designed Bookings Page into the CarShare 360 app, ensuring users can efficiently manage their car rental bookings and access essential information about booking dates, car details, and rental status.</reqs>
+            </task>
+            
+            <task>
+                <title>Cancel Bookings</title>
+                <size>S</size>
+                <story>As a user, I want the ability to cancel my pending bookings, so I can change my plans if needed.</story>
+                <reqs>Allow users to cancel pending bookings.</reqs>
+            </task>
+            <h2>Admin Functionalities</h2>
+            <task>
+                <title>View All Renting</title>
+                <size>S</size>
+                <story>As an admin, I want to view all current rentals in the system.</story>
+                <reqs>The system should display a list of all current car rentals, including details such as the customer's name, rental start and end dates, and the rented vehicle.</reqs>
+            </task>
+            
+            <task>
+                <title>Blacklist User Management</title>
+                <size>M</size>
+                <story>As an admin, I want to manage a blacklist of users who have violated rental policies.</story>
+                <reqs>The system should allow me to add and remove users from the blacklist. Blacklisted users should be restricted from renting vehicles.</reqs>
+            </task>
+            
+            <task>
+                <title>Display Requests</title>
+                <size>M</size>
+                <story>As an admin, I want to view detailed information about individual rentals.</story>
+                <reqs>When I click on a specific rental request from the list, the system should display detailed information about that rental car details, requester and the owner.</reqs>
+            </task>
+        </div>
+        <script src="./number-headings.js"></script>
+        <script src="./task-formatter.js"></script>
+    </body>
+</html>

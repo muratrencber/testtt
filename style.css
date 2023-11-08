@@ -1,0 +1,162 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.document
+{
+    width: 21cm;
+}
+.titlepage
+{
+    text-align: center;
+    height: 29.7cm;
+    width: 21cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titlepage>h1
+{
+    width: 40%;
+    margin-bottom: 4cm;
+}
+.members
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.members h1
+{
+    width: 100%;
+}
+.memberlist
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.member
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+table
+{
+    width: 90%;
+    text-align: center;
+    border-spacing: 0;
+}
+td, th
+{
+    width: 50%;
+    margin: 0;
+    padding: 0.5em;
+}
+table tr:first-child th:first-child
+{
+    background-color: gainsboro;
+    border-top-left-radius: 8px;
+    border-right: 2px solid darkgray;
+}
+table tr:first-child th:last-child
+{
+    background-color: gainsboro;
+    border-top-right-radius: 8px;
+}
+table tr:last-child td:first-child
+{
+    border-bottom-left-radius: 8px;
+}
+table tr:last-child td:last-child
+{
+    border-bottom-right-radius: 8px;
+}
+table tr td, table tr th
+{
+    border: 1px solid darkgray;
+}
+.task
+{
+    break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: stretch;
+    margin-bottom: 3em;
+}
+.task-legend
+{
+    font-family: 'Lexend Exa', sans-serif;
+    font-weight: 900;
+    line-height: 14px;
+}
+.task-title-size
+{
+    font-family: 'Lexend Exa', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #DCE5E4;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.2em;
+}
+.task-size
+{
+    border-radius: 0px 8px 0 0;
+    background-color: #ED254E;
+    padding: 12px;
+    min-width: 5em;
+    text-align: center;
+    color: white;
+}
+.task-title
+{
+    padding-left: 12px;
+    font-weight: 400;
+}
+.task-story-requirements
+{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 10px;
+}
+.task-story-container, .task-requirements-container
+{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #DCE5E4;
+    border-radius: 0 0 8px 8px;
+}
+.task-story-title, .task-requirements-title
+{
+    padding: 12px;
+    background-color: #465362;
+    color: white;
+}
+.task-story, .task-requirements
+{
+    padding: 12px;
+}
+.task-story
+{
+    font-style: italic;
+}
+.task-requirements-title
+{
+    background-color: #034595;
+}
