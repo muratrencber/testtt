@@ -15,5 +15,5 @@ for (let heading of ALL_HEADINGS) {
     if (heading.className)
         continue;
     let number = onNewHeadingAppeared(heading.tagName.toLowerCase())
-    heading.innerHTML = number + " " + heading.innerHTML
+    heading.innerHTML = number+"." + " " + heading.innerHTML
 }
