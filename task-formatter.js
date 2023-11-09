@@ -8,9 +8,10 @@ class Task
      * @param {"XS"|"S"|"M"|"L"|"XL"} size 
      * @param {string} story 
      * @param {string} requirements 
+     * @param {string} estimate 
      * @param {Element} element
      */
-    constructor(title, size, story, requirements, element)
+    constructor(title, size, story, requirements, estimate, element)
     {
         /**
          * @type {string}
@@ -29,6 +30,10 @@ class Task
          */
         this.requirements = requirements;
         /**
+         * @type {string}
+         */
+        this.estimate = estimate;
+        /**
          * @type {Element}
          */
         this.element = element;
@@ -44,17 +49,29 @@ class Task
         tasklegend.innerText = "TASK";
         tasklegend.className = "task-legend";
         parent.appendChild(tasklegend);
+        
         const titleAndSize = document.createElement("div");
         titleAndSize.className = "task-title-size";
         parent.appendChild(titleAndSize);
+        
         const title = document.createElement("div");
         title.className = "task-title";
         title.innerText = this.title;
         titleAndSize.appendChild(title);
+
+        const estimate = document.createElement("div");
+        estimate.className = "task-estimate";
+        const estimateText = document.createElement("div");
+        estimateText.innerText = this.estimate;
+        estimate.appendChild(estimateText);
+        titleAndSize.appendChild(estimate)
+
         const size = document.createElement("div");
+        const sizeText = document.createElement("div");
         size.className = "task-size";
-        size.innerText = "Size: " + this.size;
-        size.setAttribute("size", this.size)
+        sizeText.innerText = "Size: " + this.size;
+        size.setAttribute("size", this.size);
+        size.appendChild(sizeText);
         titleAndSize.appendChild(size);
 
         const storyContainer = document.createElement("div");
@@ -111,7 +128,8 @@ function exportTasks(taskList)
         let size = task.querySelector("size").innerText;
         let story = task.querySelector("story").innerText;
         let requirements = task.querySelector("reqs").innerText;
-        tasks.push(new Task(title, size, story, requirements, task));
+        let estimate = task.querySelector("estimate").innerText;
+        tasks.push(new Task(title, size, story, requirements, estimate, task));
     }
     return tasks;
 }
